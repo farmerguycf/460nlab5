@@ -1,29 +1,29 @@
 .orig x1000
-.fill x000c ;page0 
-.fill x020c ;page1 -- exception vector table
-.fill x040c ;page2
-.fill x060c ;page3
-.fill x080c ;page4
-.fill x0a0c ;page5
-.fill x0c0c ;page6
-.fill x0e0c ;page7
-.fill x100c ;page8
-.fill x120c ;page9  -- timer interrupt
-.fill x140c ;page10 -- page fault exception pte
-.fill x160c ;page11 -- protection exception pte
-.fill x180c ;page12
-.fill x1a0c ;page13 -- unaligned access pte
-.fill x1c0c ;page14 -- opcode exception pte
-.fill x1e0c ;page15
-.fill x200c ;page16
-.fill x220c ;page17
-.fill x240c ;page18
-.fill x260c ;page19
-.fill x280c ;page20
-.fill x2a0c ;page21
-.fill x2c0c ;page22
-.fill x2e0c ;page23
-.fill x3204 ;page24 
+.fill x0004 ;page0 
+.fill x0204 ;page1 -- exception vector table
+.fill x0404 ;page2
+.fill x0604 ;page3
+.fill x0804 ;page4
+.fill x0a04 ;page5
+.fill x0c04 ;page6
+.fill x0e04 ;page7
+.fill x1004 ;page8
+.fill x1204 ;page9  -- timer interrupt
+.fill x1404 ;page10 -- page fault exception pte
+.fill x1604 ;page11 -- protection exception pte
+.fill x1804 ;page12
+.fill x1a04 ;page13 -- unaligned access pte
+.fill x1c04 ;page14 -- opcode exception pte
+.fill x1e04 ;page15
+.fill x2004 ;page16
+.fill x2204 ;page17
+.fill x2404 ;page18
+.fill x2604 ;page19
+.fill x2804 ;page20
+.fill x2a04 ;page21
+.fill x2c04 ;page22
+.fill x2e04 ;page23
+.fill x320c ;page24 
 .fill x0000 ;page25
 .fill x0000 ;page26
 .fill x0000 ;page27
@@ -86,7 +86,7 @@
 .fill x0000 ;page93
 .fill x0000 ;page94
 .fill x0000 ;page95
-.fill x3804 ;page96
+.fill x380c ;page96
 .fill x0000 ;page97
 .fill x0000 ;page98
 .fill x0000 ;page99
@@ -95,7 +95,7 @@
 .fill x0000 ;page102
 .fill x0000 ;page103
 .fill x0000 ;page104
-.fill x3804 ;page105
+.fill x380c ;page105
 .fill x0000 ;page106
 .fill x0000 ;page107
 .fill x0000 ;page108
@@ -116,6 +116,6 @@
 .fill x0000 ;page123
 .fill x0000 ;page124
 .fill x0000 ;page125
-.fill x3a04 ;page126
+.fill x3a0c ;page126
 .fill x0000 ;page127
 .end
