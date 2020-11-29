@@ -932,7 +932,7 @@ void eval_bus_drivers() {
  }
 
 if(microInst[gate_vaddr]){
-    vaddrRes = Low16bits(CURRENT_LATCHES.PTBR + ((CURRENT_LATCHES.VA &0xfe00) <<1));
+    vaddrRes = Low16bits(CURRENT_LATCHES.PTBR | ((CURRENT_LATCHES.VA &0xfe00) >>8));
 }
 
 if(microInst[gate_pte]){
