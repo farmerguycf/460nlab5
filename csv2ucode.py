@@ -4,7 +4,7 @@ import csv
 # Edit this variable to set the end column of the .csv file.
 # Note: In Python convention it must be ONE BEYOND the last column, zero-based
 # for example, the column runs from column 1 to column 23, then column_end must be 24
-column_end = 56
+column_end = 67
 
 if len(sys.argv) != 3:
 	print('usage: ', __file__, ' <csv file> <ucode file>')
