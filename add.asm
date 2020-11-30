@@ -4,7 +4,7 @@ and r0, r0, #0
 and r4, r4, #0	
 add r4, r4, #10	
 add r4, r4, #10
-lea r5, hex4
+lea r5, store
 ldw r5, r5, #0
 and r2, r2, #0
 add r2, r2, #1
