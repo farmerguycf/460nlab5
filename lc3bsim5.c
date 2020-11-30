@@ -1067,8 +1067,7 @@ void latch_datapath_values() {
     
     // here is where we load a new pte
     if(microInst[ld_pte]){
-        NEXT_LATCHES.MDR = Low16bits(BUS);
-        NEXT_LATCHES.PTE = Low16bits(BUS);
+        NEXT_LATCHES.PTE = NEXT_LATCHES.MDR;
     }else{NEXT_LATCHES.PTE = CURRENT_LATCHES.PTE;}
     
     
